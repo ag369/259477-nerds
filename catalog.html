@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Студия веб-дизайна NERDS</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="index-logo">
+            <img src="img/index-logo.png" width="200" height="100" alt="Студия веб-дизайна NERDS">
+        </div>
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <a class="login" href="#">Корзина</a>
+            </div>
+        </div>
+        <div class=container>
+            <div class=top>
+                <h1>Магазин готовых шаблонов
+            </h1>
+            </div>
+    </header>
+    <main class="container">
+        <div class="main-content">
+            <!--Начало блока с фильтрами в левой колонке -->
+            <div class="catalog-filter column-left">
+                <div class="form-rotator">
+                    <input type="range" name="price-range"><br>
+                    <label class="search-form-title">Стоимость:</label><br>
+                    <input type="text" name="min-price" placeholder="от 0">
+                    <input type="text" name="max-price" placeholder="до 15000">
+                </div>
+
+                <form class="filter-form" action="#" method="post">
+                    <fieldset>
+                        <legend>СЕТКА:</legend>
+                        <label><input type="radio" name="item-gridtype" id="item-adaptive" checked>Адаптивная</label>
+                        <label><input type="radio" name="item-gridtype" id="item-fixed">Фиксированная</label>
+                        <label><input type="radio" name="item-gridtype" id="item-stretch">Резиновая</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <label><input type="checkbox" name="item-feature" id="item-slider" checked>Слайдер</label>
+                        <label><input type="checkbox" name="item-feature" id="item-advantages">Блок преимуществ</label>
+                        <label><input type="checkbox" name="item-feature" id="item-news" checked>Новости</label>
+                        <label><input type="checkbox" name="item-feature" id="item-gallery">Галерея</label>
+                        <label><input type="checkbox" name="item-feature" id="item-cart">Корзина</label>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
+            </div>
+            <!--Конец блока с фильтрами в левой колонке -->
+            <div class="catalog-products column-right">
+                <!--Начало блока сортировки в правой колонке -->
+                <div class="ranging">
+                    <p>Сортировка:
+                        <a href="#">по цене</a>
+                        <a href="#">по типу</a>
+                        <a href="#">по названию</a>
+                </div>
+                <div class="search-result-direction">
+                    <a class="search-result-up" href="#">вверх</a>
+                    <a class="search-result-down" href="#">вниз</a>
+                </div>
+            </div>
+            <!--Конец блока сортировки в правой колонке -->
+            <!--Начало блока с превью готовых шаблонов в правой колонке-->
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/sedona.jpg" width="400px" height="600px" alt="Седона"></a>
+                <div class="catalog-items-info">
+                    <h2 class="catalog-items-title">Седона</h2>
+                    <p>Информационный сайт для туристов
+                    </p>
+                    <div class="product-action">
+                        <div class="item-buying">
+                            <a class="item-buying-btn" href="#">9900 руб.</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/pink.jpg" width="400px" height="600px" alt="Pink"></a>
+            </article>
+            </article>
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/borodynsky.jpg" width="400px" height="600px" alt="Бородинский"></a>
+            </article>
+            </article>
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/mishka.jpg" width="400px" height="600px" alt="Mishka"></a>
+            </article>
+            </article>
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/aplus.jpg" width="400px" height="600px" alt="A plus"></a>
+            </article>
+            </article>
+            <article class="catalog-items-preview">
+                <a href="#"><img src="img/craftkvas.jpg" width="400px" height="600px" alt="Крафтовый квас"></a>
+            </article>
+
+            <div class="catalog-pages">
+                <a class="catalog-pages-btn" href="#">1</a>
+                <a class="catalog-pages-btn" href="#">2</a>
+                <a class="catalog-pages-btn" href="#">3</a>
+                <a class="catalog-pages-btnext" href="#">Следующая</a>
+            </div>
+        </div>
+        </div>
+        <!--Конец блока сортировки в правой колонке -->
+
+        <!--Начало блока контактов и карты проезда -->
+
+        <div class="contacts">
+            <h3 class="index-content-subheader">NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург<br> ул.Большая Конюшенная, д.19/8
+            </p>
+            <p>тел. +7 (812) 275-75-75
+            </p>
+            <a href="#" class="btn">Напишите нам</a>
+        </div>
+        <div class="map">
+            <img src="map.png" width="1100px" height="400px" alt="Карта проезда">
+        </div>
+        <!--Конец блока контактов и карты проезда -->
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+        </div>
+        <section class="footer-social-btn">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-social-cta">
+            <h3 class="footer-social-title">Давайте дружить, это выгодно!</h3>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
