@@ -1,6 +1,186 @@
 body {
     font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+}
+
+.clearfix::after {
+    content: "";    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.2);
+    outline: 1px dotted black;
+}
+
+.index-logo {
+    float: left;
+    margin-left: 20px;
+    width: 160px;
+    background-color: rgba(200, 255, 0, 0.2);
+    outline: 1px solid black;
+}
+
+.main-navigation {
+    float: left;
+    width: 440px;
+    margin-left: 200px;
+    background-color: rgba(0, 255, 0, 0.2);
+    outline: 1px solid black;
+}
+
+.user-block {
+    float: right;
+    width: 160px;
+    margin-left: 200px;
+    background-color: rgba(0, 0, 255, 0.2);
+    outline: 1px solid black;
+    min-height: 70px;
+}
+
+.top-info {
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.top-slider {
+    width: 760px;
+    margin-right: 20px;
+}
+
+.features {
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 300px;
+    min-height: 148px;
+    margin-right: 100px;
+}
+
+.feature-item:last-child {
+    margin-right: 0;
+}
+
+.feature-item:first-child {
+    margin-left: 20px;
+}
+
+.inndex-content {
+    margin-bottom: 20px;
+}
+
+.index-content-left {
+    float: left;
+    width: 660px;
+    margin-left: 20px;
+    margin-right: 140px;
+}
+
+.index-content-right {
+    float: left;
+    width: 360px;
+    margin-right: 20px;
+}
+
+.content-right-feature {
+    display: inline-block;
+    width: 100px;
+    min-height: 90px;
+}
+
+.portfolio {
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.portfolio-logo {
+    display: inline-block;
+    width: 260px;
+    height: 186px;
+    vertical-align: top;
+}
+
+.portfolio-logo:first-child {
+    float: left;
+}
+
+.footer-social-btn {
+    float: left;
+    width: 260px;
+    min-height: 90px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 140px;
+}
+
+.footer-social-cta {
+    float: left;
+    width: 560px;
+}
+
+.catalog-header {
+    margin: auto;
+    text-align: center;
+    height: 140px;
+    padding-top: 50px;
+    height: 110px;
+}
+
+.column-left {
+    float: left;
+    width: 260px;
+    min-height: 2100px;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+.column-right: {
+    float: right;
+    width: 760px;
+    min-width: 2100px;
+    margin-left: 70px;
+}
+
+.ranging {
+    height: 135px;
+}
+
+.ranging-buttons {
+    float: left;
+}
+
+.search-result-direction {
+    float: right;
+}
+
+.ranging-btn {
+    display: inline-block;
+}
+
+.catalog-items {
+    font-size: 0;
+    min-height: 1800px;
+}
+
+.catalog-items-preview {
+    display: inline-block;
+    width: 360px;
+    height: 575px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.catalog-items-preview:nth-child(2n) {
+    margin-right: 0;
 }
 
 h1 {

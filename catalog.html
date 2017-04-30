@@ -9,10 +9,10 @@
 
 <body>
     <header class="main-header">
-        <div class="index-logo">
-            <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия веб-дизайна NERDS"></a>
-        </div>
-        <div class="main-header-right">
+        <div class="container clearfix">
+            <div class="index-logo">
+                <img src="img/nerds-logo.png" width="160" height="65" alt="Студия веб-дизайна NERDS">
+            </div>
             <nav class="main-navigation">
                 <ul>
                     <li>
@@ -33,11 +33,14 @@
                 <a class="login" href="#">Корзина</a>
             </div>
         </div>
+
     </header>
     <main class="container">
         <div class="top">
-            <h1>Магазин готовых шаблонов
+            <div class="container clearfix">
+                <h1 class="catalog-header">Магазин готовых шаблонов
             </h1>
+            </div>
         </div>
         <div class="main-content">
             <!--Начало блока с фильтрами в левой колонке -->
@@ -71,21 +74,24 @@
             <div class="catalog-products column-right">
                 <!--Начало блока сортировки в правой колонке -->
                 <div class="ranging">
-                    <span class="ranging-title">Сортировка:</span>
-                    <button class="ranging-btn" type="button">по цене</button>
-                    <button class="ranging-btn" type="button">по типу</button>
-                    <button class="ranging-btn" type="button">по названию</button>
-                </div>
-                <div class="search-result-direction">
-                    <button class="btn-search-up" type="button">вверх</button>
-                    <button class="btn-search-down" type="button">вниз</button>
+                    <div class="ranging-buttons">
+                        <span class="ranging-title">Сортировать:</span>
+                    </div>
+                    <div class="search-result-direction">
+                        <button class="ranging-btn" type="button">по цене</button>
+                        <button class="ranging-btn" type="button">по типу</button>
+                        <button class="ranging-btn" type="button">по названию</button>
+                        <button class="btn-search-up" type="button">вверх</button>
+                        <button class="btn-search-down" type="button">вниз</button>
+                    </div>
                 </div>
                 <!--Конец блока сортировки в правой колонке -->
                 <!--Начало блока готовых шаблонов в правой колонке-->
                 <div class="catalog-items">
                     <article class="catalog-items-preview">
-                        <a href="#"><img src="img/shablon-sedona.jpg" width="360px" height="576px" alt="Седона"></a>
-                        <div class="catalog-items-info">
+                        <a href="#"><img src="img/shablon-sedona.jpg" width="360px" height="576px" alt="Седона" class="item-preview-pic"></a>
+
+                        <!--<div class="catalog-items-info">
                             <h2 class="catalog-items-title">Седона</h2>
                             <p>Информационный сайт для туристов
                             </p>
@@ -94,7 +100,7 @@
                                     <button class="item-buying-btn" type="button">9900 руб.</button>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </article>
                     <article class="catalog-items-preview">
                         <a href="#"><img src="img/shablon-pink.jpg" width="360px" height="576px" alt="Pink"></a>
@@ -116,28 +122,34 @@
                         <a href="#"><img src="img/shablon-kvas.jpg" width="360px" height="576px" alt="Крафтовый квас"></a>
                     </article>
                     <!--Конец блока готовых шаблонов в правой колонке -->
+
                 </div>
-                <nav class="catalog-pages">
-                    <a class="catalog-pages-btn" href="#">1</a>
-                    <a class="catalog-pages-btn" href="#">2</a>
-                    <a class="catalog-pages-btn" href="#">3</a>
-                    <a class="catalog-pages-btnext" href="#">Следующая</a>
-                </nav>
+
             </div>
+            <nav class="catalog-pages">
+                <a class="catalog-pages-btn" href="#">1</a>
+                <a class="catalog-pages-btn" href="#">2</a>
+                <a class="catalog-pages-btn" href="#">3</a>
+                <a class="catalog-pages-btnext" href="#">Следующая</a>
+            </nav>
         </div>
+
+
 
         <!--Начало блока контактов и карты проезда -->
 
         <div class="map">
-            <div class="contacts">
-                <h3 class="index-content-subheader">NЁRDS DESIGN STUDIO</h3>
-                <p>191186, Санкт-Петербург<br> ул.Большая Конюшенная, д.19/8
-                </p>
-                <p>тел. +7 (812) 275-75-75
-                </p>
-                <button class="contacts-btn" type="button">Напишите нам</button>
+            <div class="container clearfix">
+                <div class="contacts">
+                    <h3 class="index-content-subheader">NЁRDS DESIGN STUDIO</h3>
+                    <p>191186, Санкт-Петербург<br> ул.Большая Конюшенная, д.19/8
+                    </p>
+                    <p>тел. +7 (812) 275-75-75
+                    </p>
+                    <button class="contacts-btn" type="button">Напишите нам</button>
+                </div>
+                <img src="img/map-marker.png" class="map-image" width="1440px" height="416px" alt="Карта проезда">
             </div>
-            <img src="img/map-marker.png" class="map-image" width="1440px" height="416px" alt="Карта проезда">
         </div>
         <!--Конец блока контактов и карты проезда -->
     </main>
