@@ -161,11 +161,10 @@ body {
     margin-right: 70px;
 }
 
-.column-right: {
+.column-right {
     float: right;
     width: 760px;
-    min-width: 2100px;
-    margin-left: 70px;
+    margin-right: 20px;
 }
 
 .ranging {
@@ -202,6 +201,11 @@ body {
 
 .catalog-items-preview:nth-child(2n) {
     margin-right: 0;
+}
+
+.map-image {
+    display: block;
+    margin: auto;
 }
 
 h1 {
