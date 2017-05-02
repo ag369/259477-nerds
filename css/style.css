@@ -53,19 +53,17 @@ body {
 }
 
 .features {
-    width: 1200px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .feature-item {
     display: inline-block;
     width: 300px;
     vertical-align: top;
-    min-height: 148px;
     margin-right: 100px;
 }
 
-.feature-item:last-child {
+.feature-item:nth-child(3n) {
     margin: 0;
 }
 
@@ -110,11 +108,12 @@ body {
     width: 215px;
     height: 95px;
     outline: 1px dotted black;
-    }
+}
 
-.portfolio-logo:first-child{
+.portfolio-logo:first-child {
     margin-left: 20px;
 }
+
 .portfolio-logo:last-child {
     margin-right: 0;
 }
@@ -124,7 +123,6 @@ body {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-
 }
 
 .portfolio-logo-pic {
